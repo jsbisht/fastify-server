@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fastify-server
+  labels:
+    app: fastify-server
+spec:
+  containers:
+    - name: fastify-server
+      image: jsbisht/fastify-server:tagVersion
+      ports:
+        - containerPort: 8080
